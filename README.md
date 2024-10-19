@@ -23,21 +23,21 @@
 ## Usage
 To use the StockManager class, follow these steps:
 
-### 1. Include the StockManager Class
+## 1. Include the StockManager Class
     ```php
     require 'path/to/stockManager.php'; // Include the stockManager class
     require 'path/to/db.php'; // Include Database
 
-### 2. Create a Database Connection
+## 2. Create a Database Connection
     ```php
     $db = new \Sanan\Database("localhost", "database_name", "username", "password");
 
-### 3. Create a StockManager Instance
+## 3. Create a StockManager Instance
     ```php
     $requiredColumns = ['name', 'sku', 'description', 'price', 'stock_quantity'];
     $stockManager = new StockManager($db, 'products', $requiredColumns);
 
-### 4. Add a Product
+## 4. Add a Product
     ```php
     $stockManager->addProduct([
         'name' => 'Laptop',
@@ -47,16 +47,16 @@ To use the StockManager class, follow these steps:
         'stock_quantity' => 10
     ]);
 
-### 5. Retrieve a Product
+## 5. Retrieve a Product
     ```php
     $product = $stockManager->getProduct(1);
     print_r($product);
 
-###6. Add Stock
+##6. Add Stock
     ```php
     $stockManager->addStock(1, 5); // Add 5 units to the product with ID 1
 
-### 7. Remove Stock
+## 7. Remove Stock
     ```php
     $stockManager->removeStock(1, 3); // Remove 3 units from the product with ID 1
 
