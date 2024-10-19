@@ -16,7 +16,7 @@
    ```bash
     composer install
 
-3.Clone the basicdb library:
+3. Clone the basicdb library:
    ```bash
     git clone https://github.com/Sanan-84/basicdb.git
 
